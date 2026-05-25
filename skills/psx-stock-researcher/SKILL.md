@@ -2,7 +2,7 @@
 name: psx-stock-researcher
 description: Deep-dive research tool for any Pakistan Stock Exchange (PSX) listed stock. Use this skill whenever someone asks about a PSX stock, KSE-listed company, or wants to analyze, research, evaluate, or get information about stocks traded on Pakistan's stock market. Triggers on: stock tickers (MEBL, OGDC, SYS etc.), company names (Meezan Bank, Lucky Cement etc.), or requests like "analyze X stock", "should I buy X", "what do you think of X on PSX", "research X for me", "is X Shariah compliant", "what's X's dividend yield". Always use this skill before giving any opinion or data on a PSX-listed company.
 ---
-<!-- Version 1.2.0 — May 2026: Removed personal portfolio references, made fully generic for public distribution -->
+<!-- Version 1.3.0 — May 2026: Add insider transactions fetching from sarmaaya.pk/stocks/[TICKER]/insider-transactions -->
 
 # PSX Stock Researcher
 
@@ -39,6 +39,7 @@ Search the following sources in parallel. Read the actual pages — don't rely o
 **Primary Sources (always check):**
 - `https://dps.psx.com.pk/company/[TICKER]` — Official PSX page: price, financials, announcements, company profile
 - `https://sarmaaya.pk/psx/company/[TICKER]` — Shariah compliance status, ratios, dividend history, technicals
+- `https://sarmaaya.pk/stocks/[TICKER]/insider-transactions` — Insider and institutional transactions: holder type, shares held, portfolio %, change %, dates. Flag any significant insider selling patterns.
 - `https://stockanalysis.com/quote/psx/[TICKER]/` — Revenue trends, EPS, ROE, income statement
 - `https://stockanalysis.com/quote/psx/[TICKER]/financials/` — Full income statement history
 - `https://stockanalysis.com/quote/psx/[TICKER]/statistics/` — Key ratios: P/E, debt/equity, current ratio, beta
@@ -129,7 +130,7 @@ This is often the most overlooked dimension. Actively check for:
 - Related-party transactions or promoter pledging
 - Auditor qualifications or going concern notes
 - Reverse mergers or shell company history
-- Promoter/insider selling patterns
+- **Insider transactions** (from `sarmaaya.pk/stocks/[TICKER]/insider-transactions`): check holder type breakdown (insider vs institutional vs mutual fund), recent change % in holdings, and whether insiders are reducing positions significantly
 - Circular debt exposure (for energy/power sector stocks)
 
 If no flags found, state: "No significant governance concerns identified in available sources."
