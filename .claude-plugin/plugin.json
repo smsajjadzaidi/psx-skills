@@ -1,0 +1,21 @@
+{
+  "name": "psx-skills",
+  "description": "Pakistan Stock Exchange (PSX/KSE) research skills for Claude Code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sajjad Zaidi",
+    "url": "https://github.com/smsajjadzaidi"
+  },
+  "homepage": "https://github.com/smsajjadzaidi/psx-skills",
+  "repository": "https://github.com/smsajjadzaidi/psx-skills",
+  "license": "MIT",
+  "keywords": [
+    "psx",
+    "kse",
+    "pakistan",
+    "stocks",
+    "finance",
+    "shariah",
+    "portfolio"
+  ]
+}

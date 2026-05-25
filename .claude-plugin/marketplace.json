@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "psx-skills",
+  "description": "Pakistan Stock Exchange (PSX/KSE) research skills for Claude Code. Deep-dive stock analysis and portfolio health checks for KSE-listed companies.",
+  "owner": {
+    "name": "Sajjad Zaidi",
+    "url": "https://github.com/smsajjadzaidi"
+  },
+  "plugins": [
+    {
+      "name": "psx-skills",
+      "description": "PSX stock researcher and portfolio analyser — live data, 7-dimension analysis, Shariah compliance, macro context, and verdicts.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

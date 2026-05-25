@@ -1,0 +1,7 @@
+{
+  "name": "psx-skills",
+  "version": "1.0.0",
+  "description": "PSX stock research and portfolio analysis skills for Claude Code",
+  "author": "Sajjad Zaidi <sajjad@sinecure.ai>",
+  "license": "MIT"
+}
