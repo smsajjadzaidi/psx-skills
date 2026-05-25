@@ -25,7 +25,7 @@ Analyzes your PSX portfolio against your investment goals. Saves your investor p
 
 **Step 2 — Install the plugin:**
 ```bash
-/plugin install psx-skills@smsajjadzaidi/psx-skills
+/plugin install psx-skills@psx-skills
 ```
 
 That's it. Both skills are available immediately.
