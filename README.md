@@ -78,13 +78,18 @@ Portfolio input can be tickers, tickers + shares, percentages, or plain text —
 
 ## Manual Install (no plugin system)
 
-Download and copy to your Claude Code skills directory:
+**Option A — Download `.skill` files (easiest):**
+
+1. Download from this repo:
+   - [`psx-stock-researcher.skill`](https://github.com/smsajjadzaidi/psx-skills/raw/main/psx-stock-researcher.skill)
+   - [`psx-portfolio-analyser.skill`](https://github.com/smsajjadzaidi/psx-skills/raw/main/psx-portfolio-analyser.skill)
+2. Move both files to `~/.claude/skills/`
+3. Restart Claude Code
+
+**Option B — Clone and copy:**
 
 ```bash
-# Clone the repo
 git clone https://github.com/smsajjadzaidi/psx-skills.git
-
-# Copy skills
 cp -r psx-skills/skills/psx-stock-researcher ~/.claude/skills/
 cp -r psx-skills/skills/psx-portfolio-analyser ~/.claude/skills/
 ```
