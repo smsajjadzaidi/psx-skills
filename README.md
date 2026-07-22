@@ -18,6 +18,8 @@ Analyzes your PSX portfolio against your investment goals. Saves your investor p
 
 ## Installation
 
+### CLI (Claude Code terminal)
+
 **Step 1 — Add this repo as a marketplace:**
 ```bash
 /plugin marketplace add smsajjadzaidi/psx-skills
@@ -29,6 +31,39 @@ Analyzes your PSX portfolio against your investment goals. Saves your investor p
 ```
 
 That's it. Both skills are available immediately.
+
+### Desktop app
+
+1. Open **Customize → Add plugin** (the plugins/marketplace panel).
+2. Paste the repo URL: `https://github.com/smsajjadzaidi/psx-skills`
+3. Click **Sync**, then install **psx-skills**.
+
+Restart the session after installing.
+
+---
+
+## Updating
+
+Skills ship with the plugin, so new versions arrive when the plugin updates.
+
+**Recommended — turn on auto-update once, then it's hands-off.** Claude Code auto-updates plugins at startup, but for third-party marketplaces this is OFF by default. Enable it per user via `/plugin` → Marketplaces → `psx-skills` → enable auto-update, or org-wide via managed `settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "psx-skills": {
+      "source": { "source": "github", "repo": "smsajjadzaidi/psx-skills" },
+      "autoUpdate": true
+    }
+  }
+}
+```
+
+**Manual update** (if you'd rather not auto-update):
+```bash
+/plugin marketplace update psx-skills
+/reload-plugins
+```
 
 ---
 
